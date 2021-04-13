@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "React513PeopleManagerWithDB.web", "React513PeopleManagerWithDB.web\React513PeopleManagerWithDB.web.csproj", "{20CA1294-2004-4ECC-852F-4CEA9C1764CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "React513PeopleManagerWithDB.data", "React513PeopleManagerWithDB.data\React513PeopleManagerWithDB.data.csproj", "{11146C3A-E405-4F55-B220-EBE7DE3AA105}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20CA1294-2004-4ECC-852F-4CEA9C1764CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20CA1294-2004-4ECC-852F-4CEA9C1764CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20CA1294-2004-4ECC-852F-4CEA9C1764CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20CA1294-2004-4ECC-852F-4CEA9C1764CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11146C3A-E405-4F55-B220-EBE7DE3AA105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11146C3A-E405-4F55-B220-EBE7DE3AA105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11146C3A-E405-4F55-B220-EBE7DE3AA105}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11146C3A-E405-4F55-B220-EBE7DE3AA105}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA7EEEFA-4E0C-4BF9-920A-99C38CD419B8}
+	EndGlobalSection
+EndGlobal
