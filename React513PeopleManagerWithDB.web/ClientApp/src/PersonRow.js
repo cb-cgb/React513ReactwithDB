@@ -2,10 +2,18 @@ import React from 'react';
 
 class PersonRow extends React.Component {
     render() { 
-        const {firstName,lastName,age} = this.props.person;
-        const {onClickEdit, onClickDelete} = this.props;
+        const {id,firstName,lastName,age} = this.props.person;
+        const {onClickEdit, onClickDelete,onDeleteCheckBoxClick,isSetToDelete} = this.props;
         return ( 
          <tr>
+            <td>
+                <input 
+                 type="checkbox"
+                 className="form-control"    
+                 checked={isSetToDelete}
+                 onChange={onDeleteCheckBoxClick}
+                 />
+            </td>
             <td>{firstName}</td>
             <td>{lastName}</td>
             <td>{age}</td>

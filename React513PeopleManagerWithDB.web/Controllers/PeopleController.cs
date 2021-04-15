@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using React513PeopleManagerWithDB.data;
+using React513PeopleManagerWithDB.web.Models;
 
 namespace React513PeopleManagerWithDB.web.Controllers
 {
@@ -42,6 +43,22 @@ namespace React513PeopleManagerWithDB.web.Controllers
         {
             var db = new PeopleRepository(_conn);
             db.DeletePerson(p.Id);
+        }
+
+        [HttpPost]
+        [Route("deletemany")]
+        public void DeletePeople(JsonViewModel vm)
+        {
+            var db = new PeopleRepository(_conn);
+            db.DeleteMany(vm.Ids);
+        }
+
+        [HttpPost]
+        [Route("update")]
+        public void UpdatePerson(Person p)
+        {
+            var db = new PeopleRepository(_conn);
+            db.UpdatePerson(p);
         }
     }
 }

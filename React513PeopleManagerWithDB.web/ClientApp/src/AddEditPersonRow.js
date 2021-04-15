@@ -2,7 +2,7 @@ import React from 'react';
 
 class AddEditPersonRow extends  React.Component {
         render() { 
-            const {onTextChange,onClickUpdate, onClickCancel, onClickAdd,isEditMode} = this.props;
+            const {onTextChange,onClickUpdate, onClickCancel, onClickAdd,isEditMode,isMissingData} = this.props;
             const {firstName, lastName,age} = this.props.person;
 
         return ( 
@@ -39,10 +39,10 @@ class AddEditPersonRow extends  React.Component {
                  />
                 </div>
                 <div className="col-md-3">
-                 {!isEditMode && <button className="btn btn-success btn-block" onClick={onClickAdd}>Add</button>}
+                 {!isEditMode && <button disabled={isMissingData} className="btn btn-success btn-block" onClick={onClickAdd}>Add</button>}
                  {!!isEditMode&& 
                   <div>
-                      <button className="btn btn-warn btn-block" onClick={onClickUpdate}>Update</button>
+                      <button className="btn btn-warning btn-block" onClick={onClickUpdate}>Update</button>
                       <button className="btn btn-info btn-block" onClick={onClickCancel}>Cancel</button>
                   </div>
                  }                                       

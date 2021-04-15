@@ -48,6 +48,15 @@ namespace React513PeopleManagerWithDB.data
             }
         }
 
+        public void DeleteMany (List<int> ids)
+        {
+            using (var context = new PeopleContext(_conn))
+            {
+                context.RemoveRange(context.People.Where(p=> ids.Contains(p.Id)));
+                context.SaveChanges();
+            }
+        }
+
     }
             
 
